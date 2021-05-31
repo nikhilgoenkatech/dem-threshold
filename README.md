@@ -16,7 +16,7 @@ The script would accept configuration from the user in a config file. Configurab
 **SMTP-Port**: Port on which the SMTP server is running 
 
 ### Config.json:
-Please find below the config file that the need to fill in - 
+Please find below the config file that the need to fill in -  
 ![config](dem-threshold/config.png) 
 
 The script makes API call to pull data for past 2-hours and populates two csv files per day viz:
@@ -29,8 +29,8 @@ The script would need to be scheduled to run every 2 hours and would be able to 
 If the total consumption is <= 40% of the configured threshold, the alert would be fired with “WARNING”, whereas, for 80% and above, it would be fired as an “ALERT”. The email would also contain the DEM usage for that day along with the csv file with details, so that the customer can identify the application that has used DEM usage and take an action accordingly. 
 
 Sample outputs for both the alerts. 
-![warning](dem-threshold/warning.msg)
-![alert](dem-threshold/alert.msg)
+![warning](dem-threshold/warning.msg)  
+![alert](dem-threshold/alert.msg)  
 
 **Potential improvement**:
 Whilst this is not supported in the script yet, script can be enhanced to implement the following logic:
