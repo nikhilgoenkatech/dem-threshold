@@ -30,8 +30,8 @@ The script would need to be scheduled to run every 2 hours and would be able to 
 If the total consumption is <= 40% of the configured threshold, the alert would be fired with “WARNING”, whereas, for 80% and above, it would be fired as an “ALERT”. The email would also contain the DEM usage for that day along with the csv file with details, so that the customer can identify the application that has used DEM usage and take an action accordingly. 
 
 Sample outputs for both the alerts.  
-![warning](readme/warning.png)  
-![alert](readme/alert.png)  
+![warning](readme/Warning.png)   
+![alert](readme/Alert.png)  
 
 **Potential improvement**:
 Whilst this is not supported in the script yet, script can be enhanced to implement the following logic:
