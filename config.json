@@ -1,0 +1,20 @@
+{
+  "tenant-details":
+   {
+     "tenant-name" : "Prod",
+     "tenant-URL"  : "https://xxx.live.dynatrace.com/api/v1/",
+     "GET-token"   : "TOKEN-VALUE",
+     "DEM-Utilization-threshold" : "44000.0"
+   },
+   "email-details":
+   {
+     "username":"smtpuser.rfe@gmail.com",
+     "password":"MyPassword",
+     "server":"smtp.gmail.com",
+     "port":"587",
+     "senders-list":"abc.xyz@organisation.com",
+     "receiver-list":"abc@myemail.com"
+   },
+  "csv-file-path" : "csv", 
+  "log_file": "dem-unit-threshold.log"
+}

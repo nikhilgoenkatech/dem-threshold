@@ -1,0 +1,50 @@
+2021-05-31T03:43:36.000,814 root INFO In initialize_email_server
+2021-05-31T03:43:37.000,636 root INFO In html_header: 
+2021-05-31T03:43:37.000,636 root INFO In populate_tenant_details
+2021-05-31T03:43:37.000,636 root INFO In populate_tenant_details {'tenant-name': 'Prod', 'tenant-URL': 'https://xxx.live.dynatrace.com/api/v1/', 'GET-token': 'TOKEN-VALUE', 'DEM-Utilization-threshold': '44000.0'} 
+2021-05-31T03:43:37.000,636 root INFO In fetch_application
+2021-05-31T03:43:37.000,636 root DEBUG fetch_application = entity/applications/
+2021-05-31T03:43:37.000,636 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,636 root DEBUG dtApiQuery: endpoint = entity/applications/
+2021-05-31T03:43:37.000,639 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:37.000,730 urllib3.connectionpool DEBUG https://xxx.live.dynatrace.com:443 "GET /api/v1/entity/applications/ HTTP/1.1" 404 83
+2021-05-31T03:43:37.000,732 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:37.000,732 root INFO Successful execution: fetch_application
+2021-05-31T03:43:37.000,732 root INFO In fetch_syn_application
+2021-05-31T03:43:37.000,732 root DEBUG fetch_syn_application = synthetic/monitors
+2021-05-31T03:43:37.000,732 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,732 root DEBUG dtApiQuery: endpoint = synthetic/monitors
+2021-05-31T03:43:37.000,734 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:37.000,742 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:37.000,743 root INFO In populate_sessions_details
+2021-05-31T03:43:37.000,743 root DEBUG populate_sessions_details = metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithoutReplayByApplication%3Afold&from=now-120m
+2021-05-31T03:43:37.000,743 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,743 root DEBUG dtApiQuery: endpoint = metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithoutReplayByApplication%3Afold&from=now-120m
+2021-05-31T03:43:37.000,744 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:37.000,804 urllib3.connectionpool DEBUG https://xxx.live.dynatrace.com:443 "GET /api/v2/metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithoutReplayByApplication%3Afold&from=now-120m HTTP/1.1" 404 83
+2021-05-31T03:43:37.000,806 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:37.000,807 root INFO In populate_sessions_details
+2021-05-31T03:43:37.000,807 root DEBUG populate_sessions_details = metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithReplayByApplication%3Afold&from=now-120m
+2021-05-31T03:43:37.000,807 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,807 root DEBUG dtApiQuery: endpoint = metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithReplayByApplication%3Afold&from=now-120m
+2021-05-31T03:43:37.000,809 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:37.000,870 urllib3.connectionpool DEBUG https://xxx.live.dynatrace.com:443 "GET /api/v2/metrics/query?metricSelector=builtin%3Abilling.apps.web.sessionsWithReplayByApplication%3Afold&from=now-120m HTTP/1.1" 404 83
+2021-05-31T03:43:37.000,872 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:37.000,873 root INFO In populate_sessions_details
+2021-05-31T03:43:37.000,873 root DEBUG populate_sessions_details = metrics/query?metricSelector=builtin%3Abilling.synthetic.actions%3Afold&from=now-120m
+2021-05-31T03:43:37.000,873 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,873 root DEBUG dtApiQuery: endpoint = metrics/query?metricSelector=builtin%3Abilling.synthetic.actions%3Afold&from=now-120m
+2021-05-31T03:43:37.000,875 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:37.000,934 urllib3.connectionpool DEBUG https://xxx.live.dynatrace.com:443 "GET /api/v2/metrics/query?metricSelector=builtin%3Abilling.synthetic.actions%3Afold&from=now-120m HTTP/1.1" 404 83
+2021-05-31T03:43:37.000,936 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:37.000,937 root INFO In populate_sessions_details
+2021-05-31T03:43:37.000,937 root DEBUG populate_sessions_details = metrics/query?metricSelector=builtin%3Abilling.synthetic.requests%3Afold&from=now-120m
+2021-05-31T03:43:37.000,937 root INFO In dtApiQuery
+2021-05-31T03:43:37.000,937 root DEBUG dtApiQuery: endpoint = metrics/query?metricSelector=builtin%3Abilling.synthetic.requests%3Afold&from=now-120m
+2021-05-31T03:43:37.000,939 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): xxx.live.dynatrace.com:443
+2021-05-31T03:43:38.000,1 urllib3.connectionpool DEBUG https://xxx.live.dynatrace.com:443 "GET /api/v2/metrics/query?metricSelector=builtin%3Abilling.synthetic.requests%3Afold&from=now-120m HTTP/1.1" 404 83
+2021-05-31T03:43:38.000,3 root INFO Execution sucessfull: dtApiQuery  
+2021-05-31T03:43:38.000,4 root INFO In populate_dem_consumption
+2021-05-31T03:43:38.000,4 root INFO Successful execution: populate_dem_consumption
+2021-05-31T03:43:38.000,4 root INFO In create_csv
+2021-05-31T03:43:38.000,4 root INFO Successful execution: func
