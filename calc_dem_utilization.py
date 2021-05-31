@@ -289,9 +289,7 @@ def initialize_email_server(logger, smtp_server_details):
     smtp_server.starttls()
     smtp_server.ehlo()
 
-    print ("Herere")
     smtp_server.login(smtp_server_details.username, smtp_server_details.password)
-    print ("N Herere")
     logger.info("Execution sucessfull: initialize_email_server")
 
   except Exception as e:
@@ -406,8 +404,8 @@ def create_csv(logger, err_msg, app_list, total_consumption, csv_data, filename,
      logger.info ("In create_csv")
      new_consumption = 0 
 
-     for key in csv_data.keys():
-       print (key + " " + str(csv_data[key]))
+     #for key in csv_data.keys():
+     #  print (key + " " + str(csv_data[key]))
 
      if not os.path.exists(path):
         os.makedirs(path)
