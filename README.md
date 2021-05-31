@@ -5,8 +5,8 @@ To install dependencies run `pip3 install -r requirements.txt`
 The script would accept configuration from the user in a config file. Configurable file can broadly be divided into multiple sections viz:
 
 ### Tenant-level:
-**tenant-URL**: The tenant for which the script would collect from.
-**Token**: Tenant with read permissions to Billing and API-V2 metrics.
+**tenant-URL**: The tenant for which the script would collect from. 
+**Token**: Tenant with read permissions to read topology, entities from v1 and read billing metrics from V2.
 **DEM-Utilization threshold**: Customer defined threshold for DEM utilization.
 
 ### Email-details:
